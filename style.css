@@ -1,0 +1,52 @@
+/* Color palette: #DEFCF9 #CADEFC #C3BEF0 #CCA8E9 */
+
+body {
+    text-align: center;
+    background-color: #C3BEF0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 4vh 0 10vh;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size:25px;
+    width:170px;
+    height:60px;
+    border-width:1px;
+    background-color: #CADEFC;
+    border-color:#CADEFC;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    margin-top: 5vh;
+}
+  
+button:hover {
+    background: #CCA8E9;
+    border-color:#CCA8E9;
+}
+
+.player-section {
+    display: inline-block;
+    width: 30vw;
+}
+
+.score-section {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-bottom: 15vh;
+}
+
+.player-name {
+    font-size: 2rem;
+    margin-bottom: 7vh;
+}
+
+.dice {
+    width: 20vh;
+}
