@@ -11,6 +11,10 @@ h1 {
     padding: 4vh 0 10vh;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
 button {
     padding: 15px 5px 15px 15px;
     display: block;
@@ -37,15 +41,13 @@ button:hover {
 }
 
 .player-name {
-    font-size: 2rem;
     margin-bottom: 7vh;
 }
 
 .score-section {
     position: relative;
-    bottom: 8vh;
+    bottom: 9vh;
     display: inline-block;
-    font-size: 1.5rem;
     margin-bottom: 7vh;
 }
 
@@ -53,10 +55,18 @@ button:hover {
     width: 35%;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
 @media (max-width: 650px) {
     h1 {
         font-size: 2rem;
         padding: 4vh 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 
     button {
@@ -70,20 +80,29 @@ button:hover {
     }
 
     .player-section {
+        /* position: absolute;
+        top: 25vh; */
         width: 45vw;
     }
 
-    .player-name {
-        font-size: 1.5rem;
+    /* .player1 {
+        left: 0;
     }
+
+    .player2 {
+        right: 0;
+    } */
     
     .score-section {
-        font-size: 1rem;
         position: absolute;
         /* Centered on parent element */
         left: 50%;
         /* Centered on element itself */
         transform: translate(-50%, 0);
         bottom: 15%;
+    }
+
+    .score-section h2 {
+        font-size: 1.2rem;
     }
 }
