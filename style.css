@@ -12,18 +12,19 @@ h1 {
 }
 
 button {
+    display: block;
+    margin: auto;
     font-family: 'Press Start 2P', cursive;
-    font-size:25px;
-    width:170px;
-    height:60px;
-    border-width:1px;
+    font-size: 2rem;
+    width: 175px;
+    height: 3.5rem;
+    border-width: 1px;
     background-color: #CADEFC;
     border-color:#CADEFC;
-    border-top-left-radius:6px;
-    border-top-right-radius:6px;
-    border-bottom-left-radius:6px;
-    border-bottom-right-radius:6px;
-    margin-top: 5vh;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
   
 button:hover {
@@ -37,9 +38,11 @@ button:hover {
 }
 
 .score-section {
+    position: relative;
+    bottom: 7vh;
     display: inline-block;
     font-size: 1.5rem;
-    padding-bottom: 15vh;
+    margin-bottom: 7vh;
 }
 
 .player-name {
@@ -48,5 +51,18 @@ button:hover {
 }
 
 .dice {
-    width: 20vh;
+    width: 35%;
 }
+
+/* @media (max-width: 600px) {
+    .player-section {
+        display: block;
+        margin: auto;
+    }
+    
+    .score-section {
+        display: block;
+        margin: auto;
+        position: static;
+    }
+} */
