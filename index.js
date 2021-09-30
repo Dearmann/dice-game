@@ -1,14 +1,12 @@
-let diceBeginningLocation = "images/dice";
-let diceEndingLocation = ".png";
+// Random number <1,6>
 let player1Dice = Math.ceil(Math.random() * 6);
 let player2Dice = Math.ceil(Math.random() * 6);
-let player1DiceLocation = diceBeginningLocation + player1Dice + diceEndingLocation;
-let player2DiceLocation = diceBeginningLocation + player2Dice + diceEndingLocation;
+// Score setup
 let player1Score = 0;
 let player2Score = 0;
-
-document.querySelector(".player1 img").setAttribute("src", player1DiceLocation);
-document.querySelector(".player2 img").setAttribute("src", player2DiceLocation);
+// Dice 1-6 image selection
+document.querySelector(".player1 img").setAttribute("src", `images/dice${player1Dice}.png`);
+document.querySelector(".player2 img").setAttribute("src", `images/dice${player2Dice}.png`);
 
 if (player1Dice > player2Dice) {
     player1Score++;
